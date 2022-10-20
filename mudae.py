@@ -37,7 +37,7 @@ while True:
     if slashRoll == "Y" or slashRoll == "y" or slashRoll == "yes":
         print("\nYou are using slash rolls")
         slashRoll = True
-        print(slashRoll)
+        # print(slashRoll)
     else:
         print("\nYou are not using slash rolls")
         slashRoll = False
