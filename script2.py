@@ -47,11 +47,11 @@ while True:
     if usRollYesOrNo == "Y" or usRollYesOrNo == "y" or usRollYesOrNo == "yes":
         print("\nYou are using stacked rolls")
         usRollYesOrNo = True
-        print(usRollYesOrNo)
+        # print(usRollYesOrNo)
     else:
         print("\nYou are not using stacked rolls")
         usRollYesOrNo = False
-        print(usRollYesOrNo)
+        # print(usRollYesOrNo)
 
     # Show user how many normal rolls they have or if they are not using normal rolls
     if int(NormalRollsAmount) > 0:
@@ -66,8 +66,8 @@ while True:
 
 ConsoleClear()
 
-print("Waiting 2 seconds so you can focus the window to Discord...")
-time.sleep(2)
+print("Waiting 5 seconds so you can focus the window to Discord...")
+time.sleep(5)
 
 ConsoleClear()
 
@@ -83,7 +83,7 @@ if slashRoll == True:
             print("Done!")
             time.sleep(random.uniform(2.5, 3))
             for i in range(20):
-                print("Rolling with us slash...")
+                print("\nRolling with us slash...")
                 pyautogui.typewrite("/")
                 pyautogui.typewrite(sortofRoll)
                 time.sleep(3)
@@ -94,7 +94,7 @@ if slashRoll == True:
                 time.sleep(random.uniform(2.5, 3))
         else:
             for i in range(int(NormalRollsAmount)):
-                print("Rolling with normal slash...")
+                print("\nRolling with normal slash...")
                 pyautogui.typewrite("/")
                 pyautogui.typewrite(sortofRoll)
                 time.sleep(2)
@@ -117,7 +117,7 @@ else:
             print("Done!")
             time.sleep(random.uniform(2.5, 3))
             for i in range(20):
-                print("Rolling with $",str(sortofRoll),"...")
+                print("\nRolling with $",str(sortofRoll),"...")
                 keyDown("altright")
                 press("4")
                 keyUp("altright")
@@ -127,7 +127,7 @@ else:
                 time.sleep(random.uniform(2.5, 3))
         else:
             for i in range(int(NormalRollsAmount)):
-                print("Rolling with normal rolls without slash...")
+                print("\nRolling with normal rolls without slash...")
                 keyDown("altright")
                 press("4")
                 keyUp("altright")
@@ -135,7 +135,7 @@ else:
                 pyautogui.press("enter")
                 print("Done!")
                 time.sleep(random.uniform(2.5, 3))
-            print("No more rolls left!\nGoodbye!")
+            print("\nNo more rolls left!\nGoodbye!")
             break
 
 
