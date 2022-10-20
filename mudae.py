@@ -41,7 +41,7 @@ while True:
     else:
         print("\nYou are not using slash rolls")
         slashRoll = False
-        print(slashRoll)
+        # print(slashRoll)
 
     # Show user if they are using stacked rolls or not
     if usRollYesOrNo == "Y" or usRollYesOrNo == "y" or usRollYesOrNo == "yes":
